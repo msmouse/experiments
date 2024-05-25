@@ -9,6 +9,7 @@ edition = "2021"
 criterion = "0.3.5"
 aptos-crypto = { git = "https://github.com/aptos-labs/aptos-core.git" }
 fastcrypto = { git = "https://github.com/MystenLabs/fastcrypto.git" }
+rust-incrhash = {git = "https://github.com/alinush/rust-incrhash.git"}
 
 [[bench]]
 name = "hashing"

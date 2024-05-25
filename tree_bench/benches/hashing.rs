@@ -1,30 +1,70 @@
 use aptos_crypto::HashValue;
 use criterion::measurement::WallTime;
 use criterion::{criterion_group, criterion_main, BenchmarkGroup, Criterion};
-use fastcrypto::hash::{EllipticCurveMultisetHash, MultisetHash};
+use fastcrypto::hash::{EllipticCurveMultisetHash as SuiIncrHash, MultisetHash};
+use rust_incrhash::ristretto::RistBlakeIncHash as AlinIncrHash;
 
-fn inc_hashing(c: &mut Criterion) {
-    let mut group = c.benchmark_group("inc_hashing");
+fn sui_incr_hash(c: &mut Criterion) {
+    let mut group = c.benchmark_group("sui_incr_hash");
 
     const SET_SIZE: usize = 10000;
 
-    let mut inc_hash = EllipticCurveMultisetHash::default();
+    let mut incr_hash = SuiIncrHash::default();
     let mut updates = Vec::new();
 
     for _ in 0..SET_SIZE {
         let old = HashValue::random();
         let new = HashValue::random();
-        inc_hash.insert(old.as_slice());
+        incr_hash.insert(old.as_slice());
         updates.push((old, new));
     }
 
     group.throughput(criterion::Throughput::Elements(SET_SIZE as u64));
 
-    group.bench_function("update_one", |b| {
+    group.bench_function("sui_incr_hash", |b| {
         b.iter(|| {
             for (old, new) in &updates {
-                inc_hash.remove(old.as_slice());
-                inc_hash.insert(new.as_slice());
+                incr_hash.remove(old.as_slice());
+                incr_hash.insert(new.as_slice());
+            }
+        })
+    });
+}
+
+fn alin_incr_hash(c: &mut Criterion) {
+    let mut group = c.benchmark_group("alin_incr_hash");
+
+    const SET_SIZE: usize = 1;
+
+    println!("a");
+
+    let mut incr_hash = AlinIncrHash::default();
+    let mut updates = Vec::new();
+
+    println!("b");
+
+    for _ in 0..SET_SIZE {
+        let old = HashValue::random();
+        let new = HashValue::random();
+        println!("b1");
+        let h = AlinIncrHash::from(old.as_slice());
+        println!("b1.5");
+        incr_hash +=  h;
+        println!("b2");
+        updates.push((old, new));
+    }
+
+    println!("c");
+
+    group.throughput(criterion::Throughput::Elements(SET_SIZE as u64));
+
+    println!("d");
+
+    group.bench_function("alin_incr_hash", |b| {
+        b.iter(|| {
+            for (old, new) in &updates {
+                incr_hash -= AlinIncrHash::from(old.as_slice());
+                incr_hash += AlinIncrHash::from(new.as_slice());
             }
         })
     });
@@ -92,7 +132,7 @@ fn complete_merkle_tree_sims(c: &mut Criterion) {
 criterion_group!(
     name = hashing;
     config = Criterion::default();
-    targets = inc_hashing, complete_merkle_tree_sims,
+    targets = sui_incr_hash, alin_incr_hash, complete_merkle_tree_sims,
 );
 
 criterion_main!(hashing);
