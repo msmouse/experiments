@@ -2,8 +2,9 @@ use aptos_crypto::HashValue;
 use criterion::measurement::WallTime;
 use criterion::{criterion_group, criterion_main, BenchmarkGroup, Criterion};
 use fastcrypto::hash::{EllipticCurveMultisetHash, MultisetHash};
+use rayon::prelude::*;
 
-fn inc_hashing(c: &mut Criterion) {
+fn inc_hash(c: &mut Criterion) {
     let mut group = c.benchmark_group("inc_hashing");
 
     const SET_SIZE: usize = 10000;
@@ -20,12 +21,74 @@ fn inc_hashing(c: &mut Criterion) {
 
     group.throughput(criterion::Throughput::Elements(SET_SIZE as u64));
 
-    group.bench_function("update_one", |b| {
+    group.bench_function("single_thread", |b| {
         b.iter(|| {
             for (old, new) in &updates {
                 inc_hash.remove(old.as_slice());
                 inc_hash.insert(new.as_slice());
             }
+        })
+    });
+}
+
+fn inc_hash_parallel(c: &mut Criterion) {
+    let mut group = c.benchmark_group("inc_hashing_parallel");
+
+    const SET_SIZE: usize = 10000;
+
+    // Fix Rayon threadpool size to 8, which is realistic as in the current production setting
+    // and benchmarking result will be more stable across different machines.
+    rayon::ThreadPoolBuilder::new()
+        .num_threads(8)
+        .thread_name(|index| format!("rayon-global-{}", index))
+        .build_global()
+        .expect("Failed to build rayon global thread pool.");
+
+    let updates: Vec<_> = (0..SET_SIZE)
+        .into_par_iter()
+        .with_min_len(100)
+        .map(|_| (HashValue::random(), HashValue::random()))
+        .collect();
+
+    let mut inc_hash = updates
+        .par_iter()
+        .fold(
+            || EllipticCurveMultisetHash::default(),
+            |mut inc_hash, (old, _new)| {
+                inc_hash.insert(old.as_slice());
+                inc_hash
+            },
+        )
+        .reduce(
+            || EllipticCurveMultisetHash::default(),
+            |mut inc_hash, other_inc_hash| {
+                inc_hash.union(&other_inc_hash);
+                inc_hash
+            },
+        );
+
+    group.throughput(criterion::Throughput::Elements(SET_SIZE as u64));
+
+    group.bench_function("multi_thread", |b| {
+        b.iter(|| {
+            let diff = updates
+                .par_iter()
+                .fold(
+                    || EllipticCurveMultisetHash::default(),
+                    |mut inc_hash, (old, new)| {
+                        inc_hash.remove(old.as_slice());
+                        inc_hash.insert(new.as_slice());
+                        inc_hash
+                    },
+                )
+                .reduce(
+                    || EllipticCurveMultisetHash::default(),
+                    |mut inc_hash, other_inc_hash| {
+                        inc_hash.union(&other_inc_hash);
+                        inc_hash
+                    },
+                );
+            inc_hash.union(&diff)
         })
     });
 }
@@ -36,10 +99,19 @@ fn complete_merkle_tree_sim(
     set_size: usize,
     arity: usize,
 ) {
+    let name = format!("arity_{}_leaves_{}_batch_{}", arity, set_size, batch_size);
+    println!("-- {name}: calculating parameters");
+
     let total_levels = (set_size as f64).log(arity as f64).ceil() as usize + 1;
     let overlapping_top_levels = (batch_size as f64).log(arity as f64).floor() as usize + 1;
     let sparse_levels = total_levels - overlapping_top_levels;
     let total_hashing = batch_size * sparse_levels + 2usize.pow(overlapping_top_levels as u32) - 1;
+
+    println!("total_levels: {total_levels}");
+    println!("overlapping_top_levels: {overlapping_top_levels}");
+    println!("sparse_levels: {sparse_levels}");
+    println!("total_hashing: {total_hashing}");
+
     let mut hashings = Vec::new();
     for _ in 0..total_hashing {
         let mut siblings = Vec::new();
@@ -48,12 +120,6 @@ fn complete_merkle_tree_sim(
         }
         hashings.push(siblings);
     }
-
-    let name = format!("arity_{}_leaves_{}_batch_{}", arity, set_size, batch_size);
-    println!("total_levels: {total_levels}");
-    println!("overlapping_top_levels: {overlapping_top_levels}");
-    println!("sparse_levels: {sparse_levels}");
-    println!("total_hashing: {total_hashing}");
 
     group.throughput(criterion::Throughput::Elements(batch_size as u64));
     group.bench_function(&name, |b| {
@@ -92,7 +158,7 @@ fn complete_merkle_tree_sims(c: &mut Criterion) {
 criterion_group!(
     name = hashing;
     config = Criterion::default();
-    targets = inc_hashing, complete_merkle_tree_sims,
+    targets = inc_hash, inc_hash_parallel, complete_merkle_tree_sims,
 );
 
 criterion_main!(hashing);
