@@ -102,15 +102,19 @@ fn complete_merkle_tree_sim(
     let name = format!("arity_{}_leaves_{}_batch_{}", arity, set_size, batch_size);
     println!("-- {name}: calculating parameters");
 
-    let total_levels = (set_size as f64).log(arity as f64).ceil() as usize + 1;
+    let total_levels = (set_size as f64).log(arity as f64).ceil() as usize;
     let overlapping_top_levels = (batch_size as f64).log(arity as f64).floor() as usize + 1;
     let sparse_levels = total_levels - overlapping_top_levels;
-    let total_hashing = batch_size * sparse_levels + 2usize.pow(overlapping_top_levels as u32) - 1;
+    let total_hashing = batch_size * sparse_levels
+        + (arity.pow(overlapping_top_levels as u32 - 1) - 1) / (arity - 1);
+    let disk_bytes_per_update = total_hashing * arity * 32 / batch_size;
 
-    println!("total_levels: {total_levels}");
-    println!("overlapping_top_levels: {overlapping_top_levels}");
-    println!("sparse_levels: {sparse_levels}");
-    println!("total_hashing: {total_hashing}");
+    println!("(not counting leaves):");
+    println!("  total_levels: {total_levels}");
+    println!("  overlapping_top_levels: {overlapping_top_levels}");
+    println!("  sparse_levels: {sparse_levels}");
+    println!("  total_hashing: {total_hashing}");
+    println!("  disk_bytes_per_update: {disk_bytes_per_update}");
 
     let mut hashings = Vec::new();
     for _ in 0..total_hashing {
