@@ -143,7 +143,7 @@ fn complete_merkle_tree_sim(
     print!("\"arity\": {arity}, ");
     print!("\"total_memory_m\": {total_memory_m}, ");
     print!("\"num_hashing_per_batch\": {num_hashing_per_batch}, ");
-    print!("\"disk_bytes_per_batch\": {disk_bytes_per_update}");
+    print!("\"disk_bytes_per_update\": {disk_bytes_per_update}");
     print!("}}\n\n\n");
 
     let mut hashings = Vec::new();
