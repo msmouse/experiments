@@ -172,7 +172,7 @@ fn complete_merkle_tree_sim(
 fn complete_merkle_tree_sims(c: &mut Criterion) {
     let mut group = c.benchmark_group(format!("complete_merkle_tree_sims"));
 
-    for set_size_m in [16, 64, 128, 1_000, 10_000, 100_000] {
+    for set_size_m in [16, 64, 128, 256, 1_000, 10_000, 100_000] {
         for batch_size_k in [1, 10, 100] {
             for arity in [2, 4, 8, 16, 32, 64, 256] {
                 complete_merkle_tree_sim(&mut group, batch_size_k, set_size_m, arity);
