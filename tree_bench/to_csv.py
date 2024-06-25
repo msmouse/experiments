@@ -1,7 +1,7 @@
 #!/bin/python3
 
 # note: before going through this, filter log with:
-#     `grep -P 'name: |thrpt:.*Kelem'`
+#     `grep -P 'name": |thrpt:.*Kelem'`
 
 import csv
 import sys
@@ -14,12 +14,9 @@ FIELD_NAMES = [
     'set_size_m',
     'batch_size_k',
     'arity',
-    'total_levels',
     'total_memory_m',
-    'overlapping_top_levels',
-    'sparse_levels',
-    'total_hashing',
-    'disk_bytes_per_update',
+    'num_hashing_per_batch',
+    'disk_bytes_per_batch',
     'k_updates_per_sec',
 ]
 writer = csv.DictWriter(sys.stdout, fieldnames=FIELD_NAMES)

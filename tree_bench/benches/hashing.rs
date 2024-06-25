@@ -134,7 +134,7 @@ fn complete_merkle_tree_sim(
     let total_memory_m = total_nodes * HASH_SIZE / M;
 
     let num_hashing_per_batch = num_complete_tree_internal_nodes_to_update(arity, set_size_m * M, batch_size_k * K);
-    let disk_bytes_per_update = num_hashing_per_batch * HASH_SIZE / batch_size_k / K;
+    let disk_bytes_per_batch = num_hashing_per_batch * HASH_SIZE / batch_size_k / K;
 
     println!("(not counting leaves):");
     print!("{{\"name\": \"{name}\", ");
@@ -143,7 +143,7 @@ fn complete_merkle_tree_sim(
     print!("\"arity\": {arity}, ");
     print!("\"total_memory_m\": {total_memory_m}, ");
     print!("\"num_hashing_per_batch\": {num_hashing_per_batch}, ");
-    print!("\"disk_bytes_per_update\": {disk_bytes_per_update}");
+    print!("\"disk_bytes_per_batch\": {disk_bytes_per_batch}");
     print!("}}\n\n\n");
 
     let mut hashings = Vec::new();
