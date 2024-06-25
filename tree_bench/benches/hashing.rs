@@ -93,8 +93,28 @@ fn inc_hash_parallel(c: &mut Criterion) {
     });
 }
 
-fn num_full_tree_nodes(arity: usize, levels: usize) -> usize {
-    (arity.pow(levels as u32) - 1) / (arity - 1)
+fn n_parent_nodes(arity: usize, n_nodes: usize) -> usize {
+    n_nodes / arity + (n_nodes % arity != 0) as usize
+}
+
+fn num_complete_tree_internal_nodes_to_update(arity: usize, n_total_leaves: usize, n_updated_leaves: usize) -> usize {
+    let mut n_level_total = n_total_leaves;
+    let mut n_level_updated = n_updated_leaves;
+    let mut n_total_updated = 0;
+
+    while n_level_total > 1 {
+        let parent_level_total = n_parent_nodes(arity, n_level_total);
+        let parent_level_updated = if n_level_updated >= parent_level_total {
+            parent_level_total
+        } else {
+            n_level_updated
+        };
+        n_total_updated += parent_level_updated;
+        n_level_updated = parent_level_updated;
+        n_level_total = parent_level_total;
+    }
+
+    return n_total_updated
 }
 
 fn complete_merkle_tree_sim(
@@ -103,34 +123,31 @@ fn complete_merkle_tree_sim(
     set_size_m: usize,
     arity: usize,
 ) {
+    const M: usize = 1024 * 1024;
+    const K: usize = 1024;
+    const HASH_SIZE: usize = 32;
+
     let name = format!("arity_{}_leaves_{}m_batch_{}k", arity, set_size_m, batch_size_k);
     println!("-- {name}: calculating parameters");
 
-    let total_levels = ((set_size_m * 1024 * 1024) as f64).log(arity as f64).ceil() as usize;
-    let total_nodes = num_full_tree_nodes(arity, total_levels);
-    let total_memory_m = total_nodes * 32 / 1024 / 1024;
+    let total_nodes = num_complete_tree_internal_nodes_to_update(arity, set_size_m * M, set_size_m * M);
+    let total_memory_m = total_nodes * HASH_SIZE / M;
 
-    let overlapping_top_levels = ((batch_size_k * 1024) as f64).log(arity as f64).floor() as usize + 1;
-    let sparse_levels = total_levels - overlapping_top_levels;
-    let total_hashing =
-        batch_size_k * 1024 * sparse_levels + num_full_tree_nodes(arity, overlapping_top_levels);
-    let disk_bytes_per_update = total_hashing * 32 / batch_size_k / 1024;
+    let num_hashing_per_batch = num_complete_tree_internal_nodes_to_update(arity, set_size_m * M, batch_size_k * K);
+    let disk_bytes_per_update = num_hashing_per_batch * HASH_SIZE / batch_size_k / K;
 
     println!("(not counting leaves):");
-    print!("{{name: '{name}', ");
-    print!(" set_size_m: {set_size_m}, ");
-    print!(" batch_size_k: {batch_size_k}, ");
-    print!(" arity: {arity}, ");
-    print!(" total_levels: {total_levels}, ");
-    print!(" total_memory_m: {total_memory_m}, ");
-    print!("  overlapping_top_levels: {overlapping_top_levels}, ");
-    print!("  sparse_levels: {sparse_levels}, ");
-    print!("  total_hashing: {total_hashing}, ");
-    print!("  disk_bytes_per_update: {disk_bytes_per_update}");
+    print!("{{\"name\": \"{name}\", ");
+    print!("\"set_size_m\": {set_size_m}, ");
+    print!("\"batch_size_k\": {batch_size_k}, ");
+    print!("\"arity\": {arity}, ");
+    print!("\"total_memory_m\": {total_memory_m}, ");
+    print!("\"num_hashing_per_batch\": {num_hashing_per_batch}, ");
+    print!("\"disk_bytes_per_update\": {disk_bytes_per_update}");
     print!("}}\n\n\n");
 
     let mut hashings = Vec::new();
-    for _ in 0..total_hashing {
+    for _ in 0..num_hashing_per_batch {
         let mut siblings = Vec::new();
         for _ in 0..arity {
             siblings.push(HashValue::random());
