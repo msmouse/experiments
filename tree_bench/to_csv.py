@@ -16,7 +16,7 @@ FIELD_NAMES = [
     'arity',
     'total_memory_m',
     'num_hashing_per_batch',
-    'disk_bytes_per_batch',
+    'disk_bytes_per_update',
     'k_updates_per_sec',
 ]
 writer = csv.DictWriter(sys.stdout, fieldnames=FIELD_NAMES)
