@@ -1,0 +1,1986 @@
+   Compiling tree_bench v0.1.0 (/home/msmouse/work/experiments/tree_bench)
+    Finished `bench` profile [optimized] target(s) in 1.89s
+Gnuplot not found, using plotters backend
+-- arity_2_leaves_16m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_16m_batch_1k", "set_size_m": 16, "batch_size_k": 1, "arity": 2, "total_memory_m": 511, "num_hashing_per_batch": 15359, "disk_bytes_per_update": 479}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_1k: Collecting 100 samples in estimated 5.1053 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_16m_batch_1k
+                        time:   [12.695 ms 12.748 ms 12.799 ms]
+                        thrpt:  [80.007 Kelem/s 80.329 Kelem/s 80.662 Kelem/s]
+                 change:
+                        time:   [-3.1672% -2.7113% -2.2283%] (p = 0.00 < 0.05)
+                        thrpt:  [+2.2791% +2.7868% +3.2708%]
+                        Performance has improved.
+-- arity_4_leaves_16m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_16m_batch_1k", "set_size_m": 16, "batch_size_k": 1, "arity": 4, "total_memory_m": 170, "num_hashing_per_batch": 7509, "disk_bytes_per_update": 234}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_1k: Collecting 100 samples in estimated 5.2504 s (600 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_16m_batch_1k
+                        time:   [8.7542 ms 8.7810 ms 8.8102 ms]
+                        thrpt:  [116.23 Kelem/s 116.62 Kelem/s 116.97 Kelem/s]
+                 change:
+                        time:   [-4.6533% -4.2910% -3.9029%] (p = 0.00 < 0.05)
+                        thrpt:  [+4.0615% +4.4834% +4.8804%]
+                        Performance has improved.
+-- arity_8_leaves_16m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_16m_batch_1k", "set_size_m": 16, "batch_size_k": 1, "arity": 8, "total_memory_m": 73, "num_hashing_per_batch": 4681, "disk_bytes_per_update": 146}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_1k: Collecting 100 samples in estimated 5.1361 s (700 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_16m_batch_1k
+                        time:   [7.2018 ms 7.2194 ms 7.2376 ms]
+                        thrpt:  [141.48 Kelem/s 141.84 Kelem/s 142.19 Kelem/s]
+                 change:
+                        time:   [-1.3786% -0.8945% -0.4375%] (p = 0.00 < 0.05)
+                        thrpt:  [+0.4394% +0.9026% +1.3978%]
+                        Change within noise threshold.
+-- arity_16_leaves_16m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_16m_batch_1k", "set_size_m": 16, "batch_size_k": 1, "arity": 16, "total_memory_m": 34, "num_hashing_per_batch": 3345, "disk_bytes_per_update": 104}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_1k: Collecting 100 samples in estimated 5.3634 s (700 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_16m_batch_1k
+                        time:   [7.6869 ms 7.7156 ms 7.7461 ms]
+                        thrpt:  [132.19 Kelem/s 132.72 Kelem/s 133.21 Kelem/s]
+                 change:
+                        time:   [-1.0447% -0.4869% +0.0580%] (p = 0.10 > 0.05)
+                        thrpt:  [-0.0580% +0.4893% +1.0557%]
+                        No change in performance detected.
+-- arity_32_leaves_16m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_16m_batch_1k", "set_size_m": 16, "batch_size_k": 1, "arity": 32, "total_memory_m": 16, "num_hashing_per_batch": 2577, "disk_bytes_per_update": 80}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_1k: Collecting 100 samples in estimated 5.3193 s (600 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_16m_batch_1k
+                        time:   [8.8276 ms 8.8477 ms 8.8698 ms]
+                        thrpt:  [115.45 Kelem/s 115.74 Kelem/s 116.00 Kelem/s]
+-- arity_64_leaves_16m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_16m_batch_1k", "set_size_m": 16, "batch_size_k": 1, "arity": 64, "total_memory_m": 8, "num_hashing_per_batch": 2113, "disk_bytes_per_update": 66}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_1k: Collecting 100 samples in estimated 5.4029 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_16m_batch_1k
+                        time:   [13.531 ms 13.551 ms 13.573 ms]
+                        thrpt:  [75.443 Kelem/s 75.567 Kelem/s 75.675 Kelem/s]
+-- arity_256_leaves_16m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_16m_batch_1k", "set_size_m": 16, "batch_size_k": 1, "arity": 256, "total_memory_m": 2, "num_hashing_per_batch": 1281, "disk_bytes_per_update": 40}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_1k: Collecting 100 samples in estimated 5.9578 s (200 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_16m_batch_1k
+                        time:   [29.544 ms 29.575 ms 29.610 ms]
+                        thrpt:  [34.582 Kelem/s 34.623 Kelem/s 34.660 Kelem/s]
+-- arity_2_leaves_16m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_16m_batch_10k", "set_size_m": 16, "batch_size_k": 10, "arity": 2, "total_memory_m": 511, "num_hashing_per_batch": 118783, "disk_bytes_per_update": 371}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 9.5s, or reduce sample count to 50.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_10k: Collecting 100 samples in estimated 9.5125 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_16m_batch_10k
+                        time:   [95.123 ms 95.180 ms 95.239 ms]
+                        thrpt:  [107.52 Kelem/s 107.59 Kelem/s 107.65 Kelem/s]
+-- arity_4_leaves_16m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_16m_batch_10k", "set_size_m": 16, "batch_size_k": 10, "arity": 4, "total_memory_m": 170, "num_hashing_per_batch": 56661, "disk_bytes_per_update": 177}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 6.6s, or reduce sample count to 70.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_10k: Collecting 100 samples in estimated 6.5684 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_16m_batch_10k
+                        time:   [65.639 ms 65.704 ms 65.778 ms]
+                        thrpt:  [155.67 Kelem/s 155.85 Kelem/s 156.00 Kelem/s]
+-- arity_8_leaves_16m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_16m_batch_10k", "set_size_m": 16, "batch_size_k": 10, "arity": 8, "total_memory_m": 73, "num_hashing_per_batch": 35401, "disk_bytes_per_update": 110}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 5.4s, or reduce sample count to 90.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_10k: Collecting 100 samples in estimated 5.4268 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_16m_batch_10k
+                        time:   [54.289 ms 54.392 ms 54.514 ms]
+                        thrpt:  [187.84 Kelem/s 188.26 Kelem/s 188.62 Kelem/s]
+-- arity_16_leaves_16m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_16m_batch_10k", "set_size_m": 16, "batch_size_k": 10, "arity": 16, "total_memory_m": 34, "num_hashing_per_batch": 24849, "disk_bytes_per_update": 77}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 5.6s, or reduce sample count to 80.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_10k: Collecting 100 samples in estimated 5.6491 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_16m_batch_10k
+                        time:   [56.480 ms 56.583 ms 56.711 ms]
+                        thrpt:  [180.56 Kelem/s 180.97 Kelem/s 181.30 Kelem/s]
+-- arity_32_leaves_16m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_16m_batch_10k", "set_size_m": 16, "batch_size_k": 10, "arity": 32, "total_memory_m": 16, "num_hashing_per_batch": 21009, "disk_bytes_per_update": 65}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.2s, or reduce sample count to 60.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_10k: Collecting 100 samples in estimated 7.1712 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_16m_batch_10k
+                        time:   [71.404 ms 71.457 ms 71.516 ms]
+                        thrpt:  [143.19 Kelem/s 143.30 Kelem/s 143.41 Kelem/s]
+-- arity_64_leaves_16m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_16m_batch_10k", "set_size_m": 16, "batch_size_k": 10, "arity": 64, "total_memory_m": 8, "num_hashing_per_batch": 14401, "disk_bytes_per_update": 45}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 9.2s, or reduce sample count to 50.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_10k: Collecting 100 samples in estimated 9.1992 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_16m_batch_10k
+                        time:   [91.767 ms 91.853 ms 91.955 ms]
+                        thrpt:  [111.36 Kelem/s 111.48 Kelem/s 111.59 Kelem/s]
+-- arity_256_leaves_16m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_16m_batch_10k", "set_size_m": 16, "batch_size_k": 10, "arity": 256, "total_memory_m": 2, "num_hashing_per_batch": 10497, "disk_bytes_per_update": 32}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 24.3s, or reduce sample count to 20.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_10k: Collecting 100 samples in estimated 24.322 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_16m_batch_10k
+                        time:   [242.66 ms 242.89 ms 243.14 ms]
+                        thrpt:  [42.115 Kelem/s 42.159 Kelem/s 42.200 Kelem/s]
+-- arity_2_leaves_16m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_16m_batch_100k", "set_size_m": 16, "batch_size_k": 100, "arity": 2, "total_memory_m": 511, "num_hashing_per_batch": 847871, "disk_bytes_per_update": 264}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 68.0s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_100k: Collecting 100 samples in estimated 67.998 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_16m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_16m_batch_100k
+                        time:   [681.30 ms 681.83 ms 682.45 ms]
+                        thrpt:  [150.05 Kelem/s 150.18 Kelem/s 150.30 Kelem/s]
+-- arity_4_leaves_16m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_16m_batch_100k", "set_size_m": 16, "batch_size_k": 100, "arity": 4, "total_memory_m": 170, "num_hashing_per_batch": 394581, "disk_bytes_per_update": 123}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 45.7s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_100k: Collecting 100 samples in estimated 45.744 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_16m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_16m_batch_100k
+                        time:   [460.02 ms 461.30 ms 462.71 ms]
+                        thrpt:  [221.31 Kelem/s 221.98 Kelem/s 222.60 Kelem/s]
+-- arity_8_leaves_16m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_16m_batch_100k", "set_size_m": 16, "batch_size_k": 100, "arity": 8, "total_memory_m": 73, "num_hashing_per_batch": 242249, "disk_bytes_per_update": 75}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 37.5s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_100k: Collecting 100 samples in estimated 37.532 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_16m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_16m_batch_100k
+                        time:   [372.08 ms 372.59 ms 373.17 ms]
+                        thrpt:  [274.41 Kelem/s 274.83 Kelem/s 275.21 Kelem/s]
+-- arity_16_leaves_16m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_16m_batch_100k", "set_size_m": 16, "batch_size_k": 100, "arity": 16, "total_memory_m": 34, "num_hashing_per_batch": 172305, "disk_bytes_per_update": 53}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 39.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_100k: Collecting 100 samples in estimated 39.279 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_16m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_16m_batch_100k
+                        time:   [393.84 ms 394.68 ms 395.59 ms]
+                        thrpt:  [258.85 Kelem/s 259.45 Kelem/s 260.00 Kelem/s]
+-- arity_32_leaves_16m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_16m_batch_100k", "set_size_m": 16, "batch_size_k": 100, "arity": 32, "total_memory_m": 16, "num_hashing_per_batch": 119313, "disk_bytes_per_update": 37}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 43.0s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_100k: Collecting 100 samples in estimated 43.049 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_16m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_16m_batch_100k
+                        time:   [430.63 ms 431.16 ms 431.83 ms]
+                        thrpt:  [237.13 Kelem/s 237.50 Kelem/s 237.79 Kelem/s]
+-- arity_64_leaves_16m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_16m_batch_100k", "set_size_m": 16, "batch_size_k": 100, "arity": 64, "total_memory_m": 8, "num_hashing_per_batch": 106561, "disk_bytes_per_update": 33}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 71.7s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_100k: Collecting 100 samples in estimated 71.743 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_16m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_16m_batch_100k
+                        time:   [719.08 ms 719.85 ms 720.94 ms]
+                        thrpt:  [142.04 Kelem/s 142.25 Kelem/s 142.41 Kelem/s]
+-- arity_256_leaves_16m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_16m_batch_100k", "set_size_m": 16, "batch_size_k": 100, "arity": 256, "total_memory_m": 2, "num_hashing_per_batch": 65793, "disk_bytes_per_update": 20}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 155.8s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_100k: Collecting 100 samples in estimated 155.81 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_16m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_16m_batch_100k
+                        time:   [1.5581 s 1.5620 s 1.5659 s]
+                        thrpt:  [65.393 Kelem/s 65.558 Kelem/s 65.721 Kelem/s]
+-- arity_2_leaves_64m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_64m_batch_1k", "set_size_m": 64, "batch_size_k": 1, "arity": 2, "total_memory_m": 2047, "num_hashing_per_batch": 17407, "disk_bytes_per_update": 543}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_1k: Collecting 100 samples in estimated 5.6038 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_64m_batch_1k
+                        time:   [14.064 ms 14.105 ms 14.150 ms]
+                        thrpt:  [72.367 Kelem/s 72.598 Kelem/s 72.811 Kelem/s]
+-- arity_4_leaves_64m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_64m_batch_1k", "set_size_m": 64, "batch_size_k": 1, "arity": 4, "total_memory_m": 682, "num_hashing_per_batch": 8533, "disk_bytes_per_update": 266}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_1k: Collecting 100 samples in estimated 5.9338 s (600 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_64m_batch_1k
+                        time:   [9.8906 ms 9.9061 ms 9.9260 ms]
+                        thrpt:  [103.16 Kelem/s 103.37 Kelem/s 103.53 Kelem/s]
+-- arity_8_leaves_64m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_64m_batch_1k", "set_size_m": 64, "batch_size_k": 1, "arity": 8, "total_memory_m": 292, "num_hashing_per_batch": 5413, "disk_bytes_per_update": 169}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_1k: Collecting 100 samples in estimated 5.8055 s (700 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_64m_batch_1k
+                        time:   [8.3367 ms 8.3633 ms 8.3921 ms]
+                        thrpt:  [122.02 Kelem/s 122.44 Kelem/s 122.83 Kelem/s]
+-- arity_16_leaves_64m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_64m_batch_1k", "set_size_m": 64, "batch_size_k": 1, "arity": 16, "total_memory_m": 136, "num_hashing_per_batch": 4165, "disk_bytes_per_update": 130}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_1k: Collecting 100 samples in estimated 5.9113 s (600 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_64m_batch_1k
+                        time:   [9.9826 ms 9.9952 ms 10.007 ms]
+                        thrpt:  [102.32 Kelem/s 102.45 Kelem/s 102.58 Kelem/s]
+-- arity_32_leaves_64m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_64m_batch_1k", "set_size_m": 64, "batch_size_k": 1, "arity": 32, "total_memory_m": 66, "num_hashing_per_batch": 3139, "disk_bytes_per_update": 98}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_1k: Collecting 100 samples in estimated 5.6383 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_64m_batch_1k
+                        time:   [11.309 ms 11.312 ms 11.316 ms]
+                        thrpt:  [90.492 Kelem/s 90.521 Kelem/s 90.548 Kelem/s]
+-- arity_64_leaves_64m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_64m_batch_1k", "set_size_m": 64, "batch_size_k": 1, "arity": 64, "total_memory_m": 32, "num_hashing_per_batch": 2309, "disk_bytes_per_update": 72}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_1k: Collecting 100 samples in estimated 6.2230 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_64m_batch_1k
+                        time:   [15.566 ms 15.572 ms 15.578 ms]
+                        thrpt:  [65.734 Kelem/s 65.761 Kelem/s 65.786 Kelem/s]
+-- arity_256_leaves_64m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_64m_batch_1k", "set_size_m": 64, "batch_size_k": 1, "arity": 256, "total_memory_m": 8, "num_hashing_per_batch": 2053, "disk_bytes_per_update": 64}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_1k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 5.0s, or reduce sample count to 90.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_1k: Collecting 100 samples in estimated 5.0149 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_64m_batch_1k
+                        time:   [50.244 ms 50.402 ms 50.597 ms]
+                        thrpt:  [20.239 Kelem/s 20.317 Kelem/s 20.381 Kelem/s]
+-- arity_2_leaves_64m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_64m_batch_10k", "set_size_m": 64, "batch_size_k": 10, "arity": 2, "total_memory_m": 2047, "num_hashing_per_batch": 139263, "disk_bytes_per_update": 435}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 11.8s, or reduce sample count to 40.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_10k: Collecting 100 samples in estimated 11.806 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_64m_batch_10k
+                        time:   [118.17 ms 118.20 ms 118.22 ms]
+                        thrpt:  [86.616 Kelem/s 86.636 Kelem/s 86.656 Kelem/s]
+-- arity_4_leaves_64m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_64m_batch_10k", "set_size_m": 64, "batch_size_k": 10, "arity": 4, "total_memory_m": 682, "num_hashing_per_batch": 66901, "disk_bytes_per_update": 209}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 8.2s, or reduce sample count to 60.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_10k: Collecting 100 samples in estimated 8.1575 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_64m_batch_10k
+                        time:   [81.962 ms 82.022 ms 82.070 ms]
+                        thrpt:  [124.77 Kelem/s 124.84 Kelem/s 124.94 Kelem/s]
+-- arity_8_leaves_64m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_64m_batch_10k", "set_size_m": 64, "batch_size_k": 10, "arity": 8, "total_memory_m": 292, "num_hashing_per_batch": 43301, "disk_bytes_per_update": 135}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.0s, or reduce sample count to 70.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_10k: Collecting 100 samples in estimated 7.0099 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_64m_batch_10k
+                        time:   [70.324 ms 70.369 ms 70.411 ms]
+                        thrpt:  [145.43 Kelem/s 145.52 Kelem/s 145.61 Kelem/s]
+-- arity_16_leaves_64m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_64m_batch_10k", "set_size_m": 64, "batch_size_k": 10, "arity": 16, "total_memory_m": 136, "num_hashing_per_batch": 31813, "disk_bytes_per_update": 99}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.7s, or reduce sample count to 60.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_10k: Collecting 100 samples in estimated 7.6507 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_64m_batch_10k
+                        time:   [76.499 ms 76.533 ms 76.570 ms]
+                        thrpt:  [133.73 Kelem/s 133.80 Kelem/s 133.86 Kelem/s]
+-- arity_32_leaves_64m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_64m_batch_10k", "set_size_m": 64, "batch_size_k": 10, "arity": 32, "total_memory_m": 66, "num_hashing_per_batch": 22595, "disk_bytes_per_update": 70}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 8.1s, or reduce sample count to 60.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_10k: Collecting 100 samples in estimated 8.0997 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_64m_batch_10k
+                        time:   [81.457 ms 81.481 ms 81.506 ms]
+                        thrpt:  [125.63 Kelem/s 125.67 Kelem/s 125.71 Kelem/s]
+-- arity_64_leaves_64m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_64m_batch_10k", "set_size_m": 64, "batch_size_k": 10, "arity": 64, "total_memory_m": 32, "num_hashing_per_batch": 20741, "disk_bytes_per_update": 64}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 14.0s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_10k: Collecting 100 samples in estimated 14.014 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_64m_batch_10k
+                        time:   [139.97 ms 140.02 ms 140.07 ms]
+                        thrpt:  [73.105 Kelem/s 73.132 Kelem/s 73.156 Kelem/s]
+-- arity_256_leaves_64m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_64m_batch_10k", "set_size_m": 64, "batch_size_k": 10, "arity": 256, "total_memory_m": 8, "num_hashing_per_batch": 11269, "disk_bytes_per_update": 35}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 27.6s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_10k: Collecting 100 samples in estimated 27.587 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_64m_batch_10k
+                        time:   [275.44 ms 275.55 ms 275.66 ms]
+                        thrpt:  [37.147 Kelem/s 37.162 Kelem/s 37.176 Kelem/s]
+-- arity_2_leaves_64m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_64m_batch_100k", "set_size_m": 64, "batch_size_k": 100, "arity": 2, "total_memory_m": 2047, "num_hashing_per_batch": 1052671, "disk_bytes_per_update": 328}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 89.1s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_100k: Collecting 100 samples in estimated 89.125 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_64m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_64m_batch_100k
+                        time:   [893.34 ms 893.57 ms 893.82 ms]
+                        thrpt:  [114.56 Kelem/s 114.60 Kelem/s 114.63 Kelem/s]
+-- arity_4_leaves_64m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_64m_batch_100k", "set_size_m": 64, "batch_size_k": 100, "arity": 4, "total_memory_m": 682, "num_hashing_per_batch": 496981, "disk_bytes_per_update": 155}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 60.9s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_100k: Collecting 100 samples in estimated 60.945 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_64m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_64m_batch_100k
+                        time:   [609.14 ms 609.58 ms 610.05 ms]
+                        thrpt:  [167.86 Kelem/s 167.98 Kelem/s 168.11 Kelem/s]
+-- arity_8_leaves_64m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_64m_batch_100k", "set_size_m": 64, "batch_size_k": 100, "arity": 8, "total_memory_m": 292, "num_hashing_per_batch": 325925, "disk_bytes_per_update": 101}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 52.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_100k: Collecting 100 samples in estimated 52.342 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_64m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_64m_batch_100k
+                        time:   [524.83 ms 525.79 ms 526.65 ms]
+                        thrpt:  [194.44 Kelem/s 194.75 Kelem/s 195.11 Kelem/s]
+-- arity_16_leaves_64m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_64m_batch_100k", "set_size_m": 64, "batch_size_k": 100, "arity": 16, "total_memory_m": 136, "num_hashing_per_batch": 222277, "disk_bytes_per_update": 69}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 53.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_100k: Collecting 100 samples in estimated 53.282 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_64m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_64m_batch_100k
+                        time:   [532.63 ms 533.13 ms 533.57 ms]
+                        thrpt:  [191.92 Kelem/s 192.07 Kelem/s 192.25 Kelem/s]
+-- arity_32_leaves_64m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_64m_batch_100k", "set_size_m": 64, "batch_size_k": 100, "arity": 32, "total_memory_m": 66, "num_hashing_per_batch": 170051, "disk_bytes_per_update": 53}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 61.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_100k: Collecting 100 samples in estimated 61.296 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_64m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_64m_batch_100k
+                        time:   [612.19 ms 612.53 ms 612.84 ms]
+                        thrpt:  [167.09 Kelem/s 167.17 Kelem/s 167.27 Kelem/s]
+-- arity_64_leaves_64m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_64m_batch_100k", "set_size_m": 64, "batch_size_k": 100, "arity": 64, "total_memory_m": 32, "num_hashing_per_batch": 119045, "disk_bytes_per_update": 37}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 80.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_100k: Collecting 100 samples in estimated 80.302 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_64m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_64m_batch_100k
+                        time:   [802.41 ms 802.68 ms 802.96 ms]
+                        thrpt:  [127.53 Kelem/s 127.57 Kelem/s 127.62 Kelem/s]
+-- arity_256_leaves_64m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_64m_batch_100k", "set_size_m": 64, "batch_size_k": 100, "arity": 256, "total_memory_m": 8, "num_hashing_per_batch": 103429, "disk_bytes_per_update": 32}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 252.6s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_100k: Collecting 100 samples in estimated 252.65 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_64m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_64m_batch_100k
+                        time:   [2.5227 s 2.5239 s 2.5249 s]
+                        thrpt:  [40.556 Kelem/s 40.573 Kelem/s 40.591 Kelem/s]
+-- arity_2_leaves_128m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_128m_batch_1k", "set_size_m": 128, "batch_size_k": 1, "arity": 2, "total_memory_m": 4095, "num_hashing_per_batch": 18431, "disk_bytes_per_update": 575}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_1k: Collecting 100 samples in estimated 6.0007 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_128m_batch_1k
+                        time:   [15.458 ms 15.512 ms 15.563 ms]
+                        thrpt:  [65.796 Kelem/s 66.012 Kelem/s 66.244 Kelem/s]
+-- arity_4_leaves_128m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_128m_batch_1k", "set_size_m": 128, "batch_size_k": 1, "arity": 4, "total_memory_m": 1365, "num_hashing_per_batch": 8875, "disk_bytes_per_update": 277}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_1k: Collecting 100 samples in estimated 5.4459 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_128m_batch_1k
+                        time:   [10.882 ms 10.886 ms 10.890 ms]
+                        thrpt:  [94.031 Kelem/s 94.069 Kelem/s 94.101 Kelem/s]
+-- arity_8_leaves_128m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_128m_batch_1k", "set_size_m": 128, "batch_size_k": 1, "arity": 8, "total_memory_m": 585, "num_hashing_per_batch": 5705, "disk_bytes_per_update": 178}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_1k: Collecting 100 samples in estimated 5.3402 s (600 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_128m_batch_1k
+                        time:   [8.8126 ms 8.8401 ms 8.8706 ms]
+                        thrpt:  [115.44 Kelem/s 115.84 Kelem/s 116.20 Kelem/s]
+-- arity_16_leaves_128m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_128m_batch_1k", "set_size_m": 128, "batch_size_k": 1, "arity": 16, "total_memory_m": 273, "num_hashing_per_batch": 4233, "disk_bytes_per_update": 132}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_1k: Collecting 100 samples in estimated 5.7918 s (600 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_128m_batch_1k
+                        time:   [9.7106 ms 9.7368 ms 9.7656 ms]
+                        thrpt:  [104.86 Kelem/s 105.17 Kelem/s 105.45 Kelem/s]
+-- arity_32_leaves_128m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_128m_batch_1k", "set_size_m": 128, "batch_size_k": 1, "arity": 32, "total_memory_m": 132, "num_hashing_per_batch": 3205, "disk_bytes_per_update": 100}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_1k: Collecting 100 samples in estimated 5.6011 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_128m_batch_1k
+                        time:   [11.154 ms 11.210 ms 11.266 ms]
+                        thrpt:  [90.893 Kelem/s 91.349 Kelem/s 91.802 Kelem/s]
+-- arity_64_leaves_128m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_128m_batch_1k", "set_size_m": 128, "batch_size_k": 1, "arity": 64, "total_memory_m": 65, "num_hashing_per_batch": 2569, "disk_bytes_per_update": 80}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_1k: Collecting 100 samples in estimated 6.5797 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_128m_batch_1k
+                        time:   [16.461 ms 16.504 ms 16.552 ms]
+                        thrpt:  [61.866 Kelem/s 62.044 Kelem/s 62.206 Kelem/s]
+-- arity_256_leaves_128m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_128m_batch_1k", "set_size_m": 128, "batch_size_k": 1, "arity": 256, "total_memory_m": 16, "num_hashing_per_batch": 2057, "disk_bytes_per_update": 64}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_1k: Collecting 100 samples in estimated 9.5487 s (200 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_128m_batch_1k
+                        time:   [47.938 ms 48.089 ms 48.250 ms]
+                        thrpt:  [21.223 Kelem/s 21.294 Kelem/s 21.361 Kelem/s]
+-- arity_2_leaves_128m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_128m_batch_10k", "set_size_m": 128, "batch_size_k": 10, "arity": 2, "total_memory_m": 4095, "num_hashing_per_batch": 149503, "disk_bytes_per_update": 467}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 12.0s, or reduce sample count to 40.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_10k: Collecting 100 samples in estimated 12.003 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_128m_batch_10k
+                        time:   [121.44 ms 121.84 ms 122.26 ms]
+                        thrpt:  [83.754 Kelem/s 84.043 Kelem/s 84.320 Kelem/s]
+-- arity_4_leaves_128m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_128m_batch_10k", "set_size_m": 128, "batch_size_k": 10, "arity": 4, "total_memory_m": 1365, "num_hashing_per_batch": 72363, "disk_bytes_per_update": 226}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 8.4s, or reduce sample count to 50.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_10k: Collecting 100 samples in estimated 8.4386 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_128m_batch_10k
+                        time:   [84.551 ms 84.728 ms 84.921 ms]
+                        thrpt:  [120.58 Kelem/s 120.86 Kelem/s 121.11 Kelem/s]
+-- arity_8_leaves_128m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_128m_batch_10k", "set_size_m": 128, "batch_size_k": 10, "arity": 8, "total_memory_m": 585, "num_hashing_per_batch": 45641, "disk_bytes_per_update": 142}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.0s, or reduce sample count to 70.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_10k: Collecting 100 samples in estimated 7.0409 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_128m_batch_10k
+                        time:   [70.013 ms 70.143 ms 70.289 ms]
+                        thrpt:  [145.68 Kelem/s 145.99 Kelem/s 146.26 Kelem/s]
+-- arity_16_leaves_128m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_128m_batch_10k", "set_size_m": 128, "batch_size_k": 10, "arity": 16, "total_memory_m": 273, "num_hashing_per_batch": 32905, "disk_bytes_per_update": 102}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.6s, or reduce sample count to 60.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_10k: Collecting 100 samples in estimated 7.5575 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_128m_batch_10k
+                        time:   [75.991 ms 76.356 ms 76.731 ms]
+                        thrpt:  [133.45 Kelem/s 134.11 Kelem/s 134.75 Kelem/s]
+-- arity_32_leaves_128m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_128m_batch_10k", "set_size_m": 128, "batch_size_k": 10, "arity": 32, "total_memory_m": 132, "num_hashing_per_batch": 24709, "disk_bytes_per_update": 77}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 8.4s, or reduce sample count to 50.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_10k: Collecting 100 samples in estimated 8.4393 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_128m_batch_10k
+                        time:   [84.525 ms 84.749 ms 85.006 ms]
+                        thrpt:  [120.46 Kelem/s 120.83 Kelem/s 121.15 Kelem/s]
+-- arity_64_leaves_128m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_128m_batch_10k", "set_size_m": 128, "batch_size_k": 10, "arity": 64, "total_memory_m": 65, "num_hashing_per_batch": 21001, "disk_bytes_per_update": 65}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 13.7s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_10k: Collecting 100 samples in estimated 13.652 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_128m_batch_10k
+                        time:   [133.95 ms 134.09 ms 134.25 ms]
+                        thrpt:  [76.275 Kelem/s 76.364 Kelem/s 76.449 Kelem/s]
+-- arity_256_leaves_128m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_128m_batch_10k", "set_size_m": 128, "batch_size_k": 10, "arity": 256, "total_memory_m": 16, "num_hashing_per_batch": 12297, "disk_bytes_per_update": 38}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 28.4s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_10k: Collecting 100 samples in estimated 28.394 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_128m_batch_10k
+                        time:   [285.15 ms 285.63 ms 286.20 ms]
+                        thrpt:  [35.780 Kelem/s 35.850 Kelem/s 35.911 Kelem/s]
+-- arity_2_leaves_128m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_128m_batch_100k", "set_size_m": 128, "batch_size_k": 100, "arity": 2, "total_memory_m": 4095, "num_hashing_per_batch": 1155071, "disk_bytes_per_update": 360}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 92.6s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_100k: Collecting 100 samples in estimated 92.614 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_128m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_128m_batch_100k
+                        time:   [965.62 ms 969.43 ms 973.64 ms]
+                        thrpt:  [105.17 Kelem/s 105.63 Kelem/s 106.05 Kelem/s]
+-- arity_4_leaves_128m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_128m_batch_100k", "set_size_m": 128, "batch_size_k": 100, "arity": 4, "total_memory_m": 1365, "num_hashing_per_batch": 555691, "disk_bytes_per_update": 173}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 65.1s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_100k: Collecting 100 samples in estimated 65.093 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_128m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_128m_batch_100k
+                        time:   [649.32 ms 650.06 ms 650.91 ms]
+                        thrpt:  [157.32 Kelem/s 157.52 Kelem/s 157.70 Kelem/s]
+-- arity_8_leaves_128m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_128m_batch_100k", "set_size_m": 128, "batch_size_k": 100, "arity": 8, "total_memory_m": 585, "num_hashing_per_batch": 344649, "disk_bytes_per_update": 107}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 53.9s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_100k: Collecting 100 samples in estimated 53.851 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_128m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_128m_batch_100k
+                        time:   [536.55 ms 537.78 ms 539.10 ms]
+                        thrpt:  [189.95 Kelem/s 190.41 Kelem/s 190.85 Kelem/s]
+-- arity_16_leaves_128m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_128m_batch_100k", "set_size_m": 128, "batch_size_k": 100, "arity": 16, "total_memory_m": 273, "num_hashing_per_batch": 239753, "disk_bytes_per_update": 74}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 55.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_100k: Collecting 100 samples in estimated 55.259 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_128m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_128m_batch_100k
+                        time:   [550.67 ms 551.67 ms 552.77 ms]
+                        thrpt:  [185.25 Kelem/s 185.62 Kelem/s 185.96 Kelem/s]
+-- arity_32_leaves_128m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_128m_batch_100k", "set_size_m": 128, "batch_size_k": 100, "arity": 32, "total_memory_m": 132, "num_hashing_per_batch": 209029, "disk_bytes_per_update": 65}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 74.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_100k: Collecting 100 samples in estimated 74.265 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_128m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_128m_batch_100k
+                        time:   [725.54 ms 727.91 ms 730.43 ms]
+                        thrpt:  [140.19 Kelem/s 140.68 Kelem/s 141.14 Kelem/s]
+-- arity_64_leaves_128m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_128m_batch_100k", "set_size_m": 128, "batch_size_k": 100, "arity": 64, "total_memory_m": 65, "num_hashing_per_batch": 135689, "disk_bytes_per_update": 42}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 87.5s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_100k: Collecting 100 samples in estimated 87.511 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_128m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_128m_batch_100k
+                        time:   [874.38 ms 876.27 ms 878.46 ms]
+                        thrpt:  [116.57 Kelem/s 116.86 Kelem/s 117.11 Kelem/s]
+-- arity_256_leaves_128m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_128m_batch_100k", "set_size_m": 128, "batch_size_k": 100, "arity": 256, "total_memory_m": 16, "num_hashing_per_batch": 104457, "disk_bytes_per_update": 32}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 244.9s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_100k: Collecting 100 samples in estimated 244.93 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_128m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_128m_batch_100k
+                        time:   [2.4442 s 2.4478 s 2.4520 s]
+                        thrpt:  [41.762 Kelem/s 41.834 Kelem/s 41.895 Kelem/s]
+-- arity_2_leaves_256m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_256m_batch_1k", "set_size_m": 256, "batch_size_k": 1, "arity": 2, "total_memory_m": 8191, "num_hashing_per_batch": 19455, "disk_bytes_per_update": 607}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_1k: Collecting 100 samples in estimated 6.4193 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_256m_batch_1k
+                        time:   [16.169 ms 16.194 ms 16.224 ms]
+                        thrpt:  [63.117 Kelem/s 63.234 Kelem/s 63.333 Kelem/s]
+-- arity_4_leaves_256m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_256m_batch_1k", "set_size_m": 256, "batch_size_k": 1, "arity": 4, "total_memory_m": 2730, "num_hashing_per_batch": 9557, "disk_bytes_per_update": 298}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_1k: Collecting 100 samples in estimated 5.5715 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_256m_batch_1k
+                        time:   [11.127 ms 11.137 ms 11.149 ms]
+                        thrpt:  [91.851 Kelem/s 91.944 Kelem/s 92.025 Kelem/s]
+-- arity_8_leaves_256m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_256m_batch_1k", "set_size_m": 256, "batch_size_k": 1, "arity": 8, "total_memory_m": 1170, "num_hashing_per_batch": 6291, "disk_bytes_per_update": 196}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_1k: Collecting 100 samples in estimated 5.7967 s (600 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_256m_batch_1k
+                        time:   [9.6889 ms 9.7086 ms 9.7315 ms]
+                        thrpt:  [105.23 Kelem/s 105.47 Kelem/s 105.69 Kelem/s]
+-- arity_16_leaves_256m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_256m_batch_1k", "set_size_m": 256, "batch_size_k": 1, "arity": 16, "total_memory_m": 546, "num_hashing_per_batch": 4369, "disk_bytes_per_update": 136}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_1k: Collecting 100 samples in estimated 5.0219 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_256m_batch_1k
+                        time:   [10.032 ms 10.051 ms 10.074 ms]
+                        thrpt:  [101.65 Kelem/s 101.88 Kelem/s 102.08 Kelem/s]
+-- arity_32_leaves_256m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_256m_batch_1k", "set_size_m": 256, "batch_size_k": 1, "arity": 32, "total_memory_m": 264, "num_hashing_per_batch": 3337, "disk_bytes_per_update": 104}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_1k: Collecting 100 samples in estimated 5.7224 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_256m_batch_1k
+                        time:   [11.450 ms 11.465 ms 11.482 ms]
+                        thrpt:  [89.182 Kelem/s 89.318 Kelem/s 89.430 Kelem/s]
+-- arity_64_leaves_256m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_256m_batch_1k", "set_size_m": 256, "batch_size_k": 1, "arity": 64, "total_memory_m": 130, "num_hashing_per_batch": 3089, "disk_bytes_per_update": 96}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_1k: Collecting 100 samples in estimated 5.9204 s (300 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_256m_batch_1k
+                        time:   [19.738 ms 19.750 ms 19.763 ms]
+                        thrpt:  [51.813 Kelem/s 51.848 Kelem/s 51.880 Kelem/s]
+-- arity_256_leaves_256m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_256m_batch_1k", "set_size_m": 256, "batch_size_k": 1, "arity": 256, "total_memory_m": 32, "num_hashing_per_batch": 2065, "disk_bytes_per_update": 64}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_1k: Collecting 100 samples in estimated 9.6077 s (200 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_256m_batch_1k
+                        time:   [47.851 ms 47.888 ms 47.928 ms]
+                        thrpt:  [21.365 Kelem/s 21.383 Kelem/s 21.400 Kelem/s]
+-- arity_2_leaves_256m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_256m_batch_10k", "set_size_m": 256, "batch_size_k": 10, "arity": 2, "total_memory_m": 8191, "num_hashing_per_batch": 159743, "disk_bytes_per_update": 499}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 13.2s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_10k: Collecting 100 samples in estimated 13.201 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_256m_batch_10k
+                        time:   [132.62 ms 132.74 ms 132.92 ms]
+                        thrpt:  [77.041 Kelem/s 77.143 Kelem/s 77.215 Kelem/s]
+-- arity_4_leaves_256m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_256m_batch_10k", "set_size_m": 256, "batch_size_k": 10, "arity": 4, "total_memory_m": 2730, "num_hashing_per_batch": 77141, "disk_bytes_per_update": 241}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 9.0s, or reduce sample count to 50.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_10k: Collecting 100 samples in estimated 8.9749 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_256m_batch_10k
+                        time:   [89.966 ms 90.024 ms 90.086 ms]
+                        thrpt:  [113.67 Kelem/s 113.75 Kelem/s 113.82 Kelem/s]
+-- arity_8_leaves_256m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_256m_batch_10k", "set_size_m": 256, "batch_size_k": 10, "arity": 8, "total_memory_m": 1170, "num_hashing_per_batch": 50323, "disk_bytes_per_update": 157}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.7s, or reduce sample count to 60.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_10k: Collecting 100 samples in estimated 7.7342 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_256m_batch_10k
+                        time:   [77.221 ms 77.267 ms 77.321 ms]
+                        thrpt:  [132.44 Kelem/s 132.53 Kelem/s 132.61 Kelem/s]
+-- arity_16_leaves_256m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_256m_batch_10k", "set_size_m": 256, "batch_size_k": 10, "arity": 16, "total_memory_m": 546, "num_hashing_per_batch": 35089, "disk_bytes_per_update": 109}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 8.0s, or reduce sample count to 60.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_10k: Collecting 100 samples in estimated 8.0063 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_256m_batch_10k
+                        time:   [79.922 ms 79.956 ms 79.993 ms]
+                        thrpt:  [128.01 Kelem/s 128.07 Kelem/s 128.12 Kelem/s]
+-- arity_32_leaves_256m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_256m_batch_10k", "set_size_m": 256, "batch_size_k": 10, "arity": 32, "total_memory_m": 264, "num_hashing_per_batch": 28937, "disk_bytes_per_update": 90}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 9.9s, or reduce sample count to 50.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_10k: Collecting 100 samples in estimated 9.9037 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_256m_batch_10k
+                        time:   [99.066 ms 99.240 ms 99.449 ms]
+                        thrpt:  [102.97 Kelem/s 103.18 Kelem/s 103.36 Kelem/s]
+-- arity_64_leaves_256m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_256m_batch_10k", "set_size_m": 256, "batch_size_k": 10, "arity": 64, "total_memory_m": 130, "num_hashing_per_batch": 21521, "disk_bytes_per_update": 67}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 14.6s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_10k: Collecting 100 samples in estimated 14.553 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_256m_batch_10k
+                        time:   [143.15 ms 143.72 ms 144.25 ms]
+                        thrpt:  [70.986 Kelem/s 71.248 Kelem/s 71.533 Kelem/s]
+-- arity_256_leaves_256m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_256m_batch_10k", "set_size_m": 256, "batch_size_k": 10, "arity": 256, "total_memory_m": 32, "num_hashing_per_batch": 14353, "disk_bytes_per_update": 44}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 33.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_10k: Collecting 100 samples in estimated 33.290 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_256m_batch_10k
+                        time:   [334.22 ms 334.74 ms 335.31 ms]
+                        thrpt:  [30.539 Kelem/s 30.591 Kelem/s 30.638 Kelem/s]
+-- arity_2_leaves_256m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_256m_batch_100k", "set_size_m": 256, "batch_size_k": 100, "arity": 2, "total_memory_m": 8191, "num_hashing_per_batch": 1257471, "disk_bytes_per_update": 392}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 104.5s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_100k: Collecting 100 samples in estimated 104.46 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_256m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_256m_batch_100k
+                        time:   [1.0447 s 1.0454 s 1.0463 s]
+                        thrpt:  [97.871 Kelem/s 97.949 Kelem/s 98.020 Kelem/s]
+-- arity_4_leaves_256m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_256m_batch_100k", "set_size_m": 256, "batch_size_k": 100, "arity": 4, "total_memory_m": 2730, "num_hashing_per_batch": 599381, "disk_bytes_per_update": 187}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 69.9s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_100k: Collecting 100 samples in estimated 69.901 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_256m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_256m_batch_100k
+                        time:   [696.68 ms 697.16 ms 697.71 ms]
+                        thrpt:  [146.77 Kelem/s 146.88 Kelem/s 146.98 Kelem/s]
+-- arity_8_leaves_256m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_256m_batch_100k", "set_size_m": 256, "batch_size_k": 100, "arity": 8, "total_memory_m": 1170, "num_hashing_per_batch": 382099, "disk_bytes_per_update": 119}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 58.9s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_100k: Collecting 100 samples in estimated 58.869 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_256m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_256m_batch_100k
+                        time:   [587.19 ms 587.69 ms 588.26 ms]
+                        thrpt:  [174.07 Kelem/s 174.24 Kelem/s 174.39 Kelem/s]
+-- arity_16_leaves_256m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_256m_batch_100k", "set_size_m": 256, "batch_size_k": 100, "arity": 16, "total_memory_m": 546, "num_hashing_per_batch": 274705, "disk_bytes_per_update": 85}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 62.6s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_100k: Collecting 100 samples in estimated 62.632 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_256m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_256m_batch_100k
+                        time:   [628.04 ms 628.63 ms 629.28 ms]
+                        thrpt:  [162.73 Kelem/s 162.89 Kelem/s 163.05 Kelem/s]
+-- arity_32_leaves_256m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_256m_batch_100k", "set_size_m": 256, "batch_size_k": 100, "arity": 32, "total_memory_m": 264, "num_hashing_per_batch": 213257, "disk_bytes_per_update": 66}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 73.1s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_100k: Collecting 100 samples in estimated 73.124 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_256m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_256m_batch_100k
+                        time:   [731.66 ms 732.56 ms 733.57 ms]
+                        thrpt:  [139.59 Kelem/s 139.78 Kelem/s 139.96 Kelem/s]
+-- arity_64_leaves_256m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_256m_batch_100k", "set_size_m": 256, "batch_size_k": 100, "arity": 64, "total_memory_m": 130, "num_hashing_per_batch": 168977, "disk_bytes_per_update": 52}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 108.1s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_100k: Collecting 100 samples in estimated 108.09 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_256m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_256m_batch_100k
+                        time:   [1.0840 s 1.0849 s 1.0859 s]
+                        thrpt:  [94.303 Kelem/s 94.386 Kelem/s 94.464 Kelem/s]
+-- arity_256_leaves_256m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_256m_batch_100k", "set_size_m": 256, "batch_size_k": 100, "arity": 256, "total_memory_m": 32, "num_hashing_per_batch": 106513, "disk_bytes_per_update": 33}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 247.8s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_100k: Collecting 100 samples in estimated 247.82 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_256m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_256m_batch_100k
+                        time:   [2.4727 s 2.4741 s 2.4755 s]
+                        thrpt:  [41.365 Kelem/s 41.390 Kelem/s 41.413 Kelem/s]
+-- arity_2_leaves_1000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_1000m_batch_1k", "set_size_m": 1000, "batch_size_k": 1, "arity": 2, "total_memory_m": 32000, "num_hashing_per_batch": 21457, "disk_bytes_per_update": 670}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_1k: Collecting 100 samples in estimated 5.3119 s (300 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_1000m_batch_1k
+                        time:   [17.787 ms 17.801 ms 17.816 ms]
+                        thrpt:  [57.475 Kelem/s 57.524 Kelem/s 57.571 Kelem/s]
+-- arity_4_leaves_1000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_1000m_batch_1k", "set_size_m": 1000, "batch_size_k": 1, "arity": 4, "total_memory_m": 10666, "num_hashing_per_batch": 10550, "disk_bytes_per_update": 329}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_1k: Collecting 100 samples in estimated 6.1639 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_1000m_batch_1k
+                        time:   [12.276 ms 12.292 ms 12.311 ms]
+                        thrpt:  [83.179 Kelem/s 83.309 Kelem/s 83.417 Kelem/s]
+-- arity_8_leaves_1000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_1000m_batch_1k", "set_size_m": 1000, "batch_size_k": 1, "arity": 8, "total_memory_m": 4571, "num_hashing_per_batch": 6716, "disk_bytes_per_update": 209}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_1k: Collecting 100 samples in estimated 5.1459 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_1000m_batch_1k
+                        time:   [10.338 ms 10.345 ms 10.353 ms]
+                        thrpt:  [98.908 Kelem/s 98.982 Kelem/s 99.056 Kelem/s]
+-- arity_16_leaves_1000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_1000m_batch_1k", "set_size_m": 1000, "batch_size_k": 1, "arity": 16, "total_memory_m": 2133, "num_hashing_per_batch": 5164, "disk_bytes_per_update": 161}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_1k: Collecting 100 samples in estimated 5.9062 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_1000m_batch_1k
+                        time:   [11.832 ms 11.856 ms 11.885 ms]
+                        thrpt:  [86.161 Kelem/s 86.368 Kelem/s 86.548 Kelem/s]
+-- arity_32_leaves_1000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_1000m_batch_1k", "set_size_m": 1000, "batch_size_k": 1, "arity": 32, "total_memory_m": 1032, "num_hashing_per_batch": 4105, "disk_bytes_per_update": 128}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_1k: Collecting 100 samples in estimated 5.6070 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_1000m_batch_1k
+                        time:   [14.017 ms 14.029 ms 14.041 ms]
+                        thrpt:  [72.927 Kelem/s 72.992 Kelem/s 73.056 Kelem/s]
+-- arity_64_leaves_1000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_1000m_batch_1k", "set_size_m": 1000, "batch_size_k": 1, "arity": 64, "total_memory_m": 507, "num_hashing_per_batch": 3136, "disk_bytes_per_update": 98}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_1k: Collecting 100 samples in estimated 6.0259 s (300 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_1000m_batch_1k
+                        time:   [20.081 ms 20.113 ms 20.150 ms]
+                        thrpt:  [50.818 Kelem/s 50.913 Kelem/s 50.994 Kelem/s]
+-- arity_256_leaves_1000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_1000m_batch_1k", "set_size_m": 1000, "batch_size_k": 1, "arity": 256, "total_memory_m": 125, "num_hashing_per_batch": 2112, "disk_bytes_per_update": 66}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_1k: Collecting 100 samples in estimated 9.7909 s (200 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_1000m_batch_1k
+                        time:   [48.954 ms 48.989 ms 49.023 ms]
+                        thrpt:  [20.888 Kelem/s 20.903 Kelem/s 20.917 Kelem/s]
+-- arity_2_leaves_1000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_1000m_batch_10k", "set_size_m": 1000, "batch_size_k": 10, "arity": 2, "total_memory_m": 32000, "num_hashing_per_batch": 179841, "disk_bytes_per_update": 562}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 14.8s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_10k: Collecting 100 samples in estimated 14.834 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_1000m_batch_10k
+                        time:   [149.29 ms 149.38 ms 149.48 ms]
+                        thrpt:  [68.505 Kelem/s 68.550 Kelem/s 68.593 Kelem/s]
+-- arity_4_leaves_1000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_1000m_batch_10k", "set_size_m": 1000, "batch_size_k": 10, "arity": 4, "total_memory_m": 10666, "num_hashing_per_batch": 87254, "disk_bytes_per_update": 272}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 10.2s, or reduce sample count to 40.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_10k: Collecting 100 samples in estimated 10.171 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_1000m_batch_10k
+                        time:   [101.75 ms 101.90 ms 102.08 ms]
+                        thrpt:  [100.31 Kelem/s 100.49 Kelem/s 100.64 Kelem/s]
+-- arity_8_leaves_1000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_1000m_batch_10k", "set_size_m": 1000, "batch_size_k": 10, "arity": 8, "total_memory_m": 4571, "num_hashing_per_batch": 55772, "disk_bytes_per_update": 174}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 8.6s, or reduce sample count to 50.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_10k: Collecting 100 samples in estimated 8.5752 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_1000m_batch_10k
+                        time:   [86.097 ms 86.215 ms 86.362 ms]
+                        thrpt:  [118.57 Kelem/s 118.77 Kelem/s 118.94 Kelem/s]
+-- arity_16_leaves_1000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_1000m_batch_10k", "set_size_m": 1000, "batch_size_k": 10, "arity": 16, "total_memory_m": 2133, "num_hashing_per_batch": 42028, "disk_bytes_per_update": 131}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 9.6s, or reduce sample count to 50.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_10k: Collecting 100 samples in estimated 9.5819 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_1000m_batch_10k
+                        time:   [95.781 ms 95.873 ms 95.974 ms]
+                        thrpt:  [106.70 Kelem/s 106.81 Kelem/s 106.91 Kelem/s]
+-- arity_32_leaves_1000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_1000m_batch_10k", "set_size_m": 1000, "batch_size_k": 10, "arity": 32, "total_memory_m": 1032, "num_hashing_per_batch": 31753, "disk_bytes_per_update": 99}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 10.8s, or reduce sample count to 40.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_10k: Collecting 100 samples in estimated 10.848 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_1000m_batch_10k
+                        time:   [108.97 ms 109.21 ms 109.50 ms]
+                        thrpt:  [93.514 Kelem/s 93.763 Kelem/s 93.975 Kelem/s]
+-- arity_64_leaves_1000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_1000m_batch_10k", "set_size_m": 1000, "batch_size_k": 10, "arity": 64, "total_memory_m": 507, "num_hashing_per_batch": 24544, "disk_bytes_per_update": 76}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 15.8s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_10k: Collecting 100 samples in estimated 15.751 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_1000m_batch_10k
+                        time:   [157.34 ms 157.49 ms 157.64 ms]
+                        thrpt:  [64.957 Kelem/s 65.022 Kelem/s 65.083 Kelem/s]
+-- arity_256_leaves_1000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_1000m_batch_10k", "set_size_m": 1000, "batch_size_k": 10, "arity": 256, "total_memory_m": 125, "num_hashing_per_batch": 20544, "disk_bytes_per_update": 64}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 47.5s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_10k: Collecting 100 samples in estimated 47.537 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_1000m_batch_10k
+                        time:   [476.75 ms 477.20 ms 477.71 ms]
+                        thrpt:  [21.436 Kelem/s 21.458 Kelem/s 21.479 Kelem/s]
+-- arity_2_leaves_1000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_1000m_batch_100k", "set_size_m": 1000, "batch_size_k": 100, "arity": 2, "total_memory_m": 32000, "num_hashing_per_batch": 1459201, "disk_bytes_per_update": 456}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 120.7s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_100k: Collecting 100 samples in estimated 120.69 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_1000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_1000m_batch_100k
+                        time:   [1.2113 s 1.2121 s 1.2128 s]
+                        thrpt:  [84.430 Kelem/s 84.485 Kelem/s 84.536 Kelem/s]
+-- arity_4_leaves_1000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_1000m_batch_100k", "set_size_m": 1000, "batch_size_k": 100, "arity": 4, "total_memory_m": 10666, "num_hashing_per_batch": 699734, "disk_bytes_per_update": 218}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 81.6s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_100k: Collecting 100 samples in estimated 81.602 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_1000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_1000m_batch_100k
+                        time:   [813.44 ms 813.89 ms 814.40 ms]
+                        thrpt:  [125.74 Kelem/s 125.82 Kelem/s 125.89 Kelem/s]
+-- arity_8_leaves_1000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_1000m_batch_100k", "set_size_m": 1000, "batch_size_k": 100, "arity": 8, "total_memory_m": 4571, "num_hashing_per_batch": 446172, "disk_bytes_per_update": 139}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 68.5s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_100k: Collecting 100 samples in estimated 68.493 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_1000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_1000m_batch_100k
+                        time:   [685.43 ms 685.96 ms 686.60 ms]
+                        thrpt:  [149.14 Kelem/s 149.28 Kelem/s 149.40 Kelem/s]
+-- arity_16_leaves_1000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_1000m_batch_100k", "set_size_m": 1000, "batch_size_k": 100, "arity": 16, "total_memory_m": 2133, "num_hashing_per_batch": 324268, "disk_bytes_per_update": 101}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 74.6s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_100k: Collecting 100 samples in estimated 74.648 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_1000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_1000m_batch_100k
+                        time:   [740.45 ms 740.98 ms 741.57 ms]
+                        thrpt:  [138.09 Kelem/s 138.20 Kelem/s 138.29 Kelem/s]
+-- arity_32_leaves_1000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_1000m_batch_100k", "set_size_m": 1000, "batch_size_k": 100, "arity": 32, "total_memory_m": 1032, "num_hashing_per_batch": 237833, "disk_bytes_per_update": 74}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 81.6s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_100k: Collecting 100 samples in estimated 81.618 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_1000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_1000m_batch_100k
+                        time:   [813.56 ms 814.11 ms 814.70 ms]
+                        thrpt:  [125.69 Kelem/s 125.78 Kelem/s 125.87 Kelem/s]
+-- arity_64_leaves_1000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_1000m_batch_100k", "set_size_m": 1000, "batch_size_k": 100, "arity": 64, "total_memory_m": 507, "num_hashing_per_batch": 208864, "disk_bytes_per_update": 65}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 133.8s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_100k: Collecting 100 samples in estimated 133.81 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_1000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_1000m_batch_100k
+                        time:   [1.3372 s 1.3382 s 1.3394 s]
+                        thrpt:  [76.455 Kelem/s 76.520 Kelem/s 76.578 Kelem/s]
+-- arity_256_leaves_1000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_1000m_batch_100k", "set_size_m": 1000, "batch_size_k": 100, "arity": 256, "total_memory_m": 125, "num_hashing_per_batch": 118464, "disk_bytes_per_update": 37}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 274.5s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_100k: Collecting 100 samples in estimated 274.45 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_1000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_1000m_batch_100k
+                        time:   [2.7448 s 2.7465 s 2.7483 s]
+                        thrpt:  [37.260 Kelem/s 37.284 Kelem/s 37.306 Kelem/s]
+-- arity_2_leaves_10000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_10000m_batch_1k", "set_size_m": 10000, "batch_size_k": 1, "arity": 2, "total_memory_m": 320000, "num_hashing_per_batch": 24807, "disk_bytes_per_update": 775}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_1k: Collecting 100 samples in estimated 6.1421 s (300 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_10000m_batch_1k
+                        time:   [20.541 ms 20.556 ms 20.572 ms]
+                        thrpt:  [49.777 Kelem/s 49.815 Kelem/s 49.851 Kelem/s]
+-- arity_4_leaves_10000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_10000m_batch_1k", "set_size_m": 10000, "batch_size_k": 1, "arity": 4, "total_memory_m": 106666, "num_hashing_per_batch": 12100, "disk_bytes_per_update": 378}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_1k: Collecting 100 samples in estimated 5.6115 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_10000m_batch_1k
+                        time:   [14.047 ms 14.065 ms 14.087 ms]
+                        thrpt:  [72.693 Kelem/s 72.804 Kelem/s 72.897 Kelem/s]
+-- arity_8_leaves_10000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_10000m_batch_1k", "set_size_m": 10000, "batch_size_k": 1, "arity": 8, "total_memory_m": 45714, "num_hashing_per_batch": 7885, "disk_bytes_per_update": 246}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_1k: Collecting 100 samples in estimated 6.0445 s (500 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_10000m_batch_1k
+                        time:   [12.128 ms 12.148 ms 12.171 ms]
+                        thrpt:  [84.133 Kelem/s 84.292 Kelem/s 84.430 Kelem/s]
+-- arity_16_leaves_10000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_10000m_batch_1k", "set_size_m": 10000, "batch_size_k": 1, "arity": 16, "total_memory_m": 21333, "num_hashing_per_batch": 5789, "disk_bytes_per_update": 180}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_1k: Collecting 100 samples in estimated 5.2949 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_10000m_batch_1k
+                        time:   [13.225 ms 13.239 ms 13.254 ms]
+                        thrpt:  [77.258 Kelem/s 77.345 Kelem/s 77.431 Kelem/s]
+-- arity_32_leaves_10000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_10000m_batch_1k", "set_size_m": 10000, "batch_size_k": 1, "arity": 32, "total_memory_m": 10322, "num_hashing_per_batch": 4420, "disk_bytes_per_update": 138}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_1k: Collecting 100 samples in estimated 6.0310 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_10000m_batch_1k
+                        time:   [15.097 ms 15.130 ms 15.170 ms]
+                        thrpt:  [67.503 Kelem/s 67.682 Kelem/s 67.830 Kelem/s]
+-- arity_64_leaves_10000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_10000m_batch_1k", "set_size_m": 10000, "batch_size_k": 1, "arity": 64, "total_memory_m": 5079, "num_hashing_per_batch": 3708, "disk_bytes_per_update": 115}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_1k: Collecting 100 samples in estimated 7.1091 s (300 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_10000m_batch_1k
+                        time:   [23.669 ms 23.687 ms 23.706 ms]
+                        thrpt:  [43.196 Kelem/s 43.230 Kelem/s 43.264 Kelem/s]
+-- arity_256_leaves_10000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_10000m_batch_1k", "set_size_m": 10000, "batch_size_k": 1, "arity": 256, "total_memory_m": 1254, "num_hashing_per_batch": 2677, "disk_bytes_per_update": 83}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_1k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 6.2s, or reduce sample count to 80.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_1k: Collecting 100 samples in estimated 6.1959 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_10000m_batch_1k
+                        time:   [61.933 ms 61.996 ms 62.068 ms]
+                        thrpt:  [16.498 Kelem/s 16.517 Kelem/s 16.534 Kelem/s]
+-- arity_2_leaves_10000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_10000m_batch_10k", "set_size_m": 10000, "batch_size_k": 10, "arity": 2, "total_memory_m": 320000, "num_hashing_per_batch": 214565, "disk_bytes_per_update": 670}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 17.7s, or reduce sample count to 20.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_10k: Collecting 100 samples in estimated 17.708 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_10000m_batch_10k
+                        time:   [178.19 ms 178.41 ms 178.68 ms]
+                        thrpt:  [57.311 Kelem/s 57.394 Kelem/s 57.466 Kelem/s]
+-- arity_4_leaves_10000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_10000m_batch_10k", "set_size_m": 10000, "batch_size_k": 10, "arity": 4, "total_memory_m": 106666, "num_hashing_per_batch": 105496, "disk_bytes_per_update": 329}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 12.3s, or reduce sample count to 40.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_10k: Collecting 100 samples in estimated 12.268 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_10000m_batch_10k
+                        time:   [122.50 ms 122.58 ms 122.66 ms]
+                        thrpt:  [83.483 Kelem/s 83.539 Kelem/s 83.593 Kelem/s]
+-- arity_8_leaves_10000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_10000m_batch_10k", "set_size_m": 10000, "batch_size_k": 10, "arity": 8, "total_memory_m": 45714, "num_hashing_per_batch": 67157, "disk_bytes_per_update": 209}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 10.3s, or reduce sample count to 40.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_10k: Collecting 100 samples in estimated 10.343 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_10000m_batch_10k
+                        time:   [103.16 ms 103.32 ms 103.52 ms]
+                        thrpt:  [98.919 Kelem/s 99.109 Kelem/s 99.259 Kelem/s]
+-- arity_16_leaves_10000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_10000m_batch_10k", "set_size_m": 10000, "batch_size_k": 10, "arity": 16, "total_memory_m": 21333, "num_hashing_per_batch": 51629, "disk_bytes_per_update": 161}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 11.8s, or reduce sample count to 40.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_10k: Collecting 100 samples in estimated 11.760 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_10000m_batch_10k
+                        time:   [117.63 ms 117.75 ms 117.89 ms]
+                        thrpt:  [86.861 Kelem/s 86.965 Kelem/s 87.051 Kelem/s]
+-- arity_32_leaves_10000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_10000m_batch_10k", "set_size_m": 10000, "batch_size_k": 10, "arity": 32, "total_memory_m": 10322, "num_hashing_per_batch": 41044, "disk_bytes_per_update": 128}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 14.1s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_10k: Collecting 100 samples in estimated 14.090 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_10000m_batch_10k
+                        time:   [140.57 ms 140.82 ms 141.12 ms]
+                        thrpt:  [72.562 Kelem/s 72.717 Kelem/s 72.847 Kelem/s]
+-- arity_64_leaves_10000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_10000m_batch_10k", "set_size_m": 10000, "batch_size_k": 10, "arity": 64, "total_memory_m": 5079, "num_hashing_per_batch": 31356, "disk_bytes_per_update": 97}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 20.1s, or reduce sample count to 20.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_10k: Collecting 100 samples in estimated 20.124 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_10000m_batch_10k
+                        time:   [200.38 ms 200.62 ms 200.91 ms]
+                        thrpt:  [50.968 Kelem/s 51.043 Kelem/s 51.102 Kelem/s]
+-- arity_256_leaves_10000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_10000m_batch_10k", "set_size_m": 10000, "batch_size_k": 10, "arity": 256, "total_memory_m": 1254, "num_hashing_per_batch": 21109, "disk_bytes_per_update": 65}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 49.4s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_10k: Collecting 100 samples in estimated 49.363 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_10000m_batch_10k
+                        time:   [494.97 ms 496.07 ms 497.25 ms]
+                        thrpt:  [20.593 Kelem/s 20.642 Kelem/s 20.688 Kelem/s]
+-- arity_2_leaves_10000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_10000m_batch_100k", "set_size_m": 10000, "batch_size_k": 100, "arity": 2, "total_memory_m": 320000, "num_hashing_per_batch": 1798405, "disk_bytes_per_update": 562}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 149.2s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_100k: Collecting 100 samples in estimated 149.20 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_10000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_10000m_batch_100k
+                        time:   [1.5037 s 1.5049 s 1.5062 s]
+                        thrpt:  [67.987 Kelem/s 68.043 Kelem/s 68.098 Kelem/s]
+-- arity_4_leaves_10000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_10000m_batch_100k", "set_size_m": 10000, "batch_size_k": 100, "arity": 4, "total_memory_m": 106666, "num_hashing_per_batch": 872536, "disk_bytes_per_update": 272}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 102.4s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_100k: Collecting 100 samples in estimated 102.40 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_10000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_10000m_batch_100k
+                        time:   [1.0213 s 1.0222 s 1.0233 s]
+                        thrpt:  [100.07 Kelem/s 100.17 Kelem/s 100.27 Kelem/s]
+-- arity_8_leaves_10000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_10000m_batch_100k", "set_size_m": 10000, "batch_size_k": 100, "arity": 8, "total_memory_m": 45714, "num_hashing_per_batch": 557717, "disk_bytes_per_update": 174}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 86.7s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_100k: Collecting 100 samples in estimated 86.737 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_10000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_10000m_batch_100k
+                        time:   [862.27 ms 863.08 ms 863.93 ms]
+                        thrpt:  [118.53 Kelem/s 118.65 Kelem/s 118.76 Kelem/s]
+-- arity_16_leaves_10000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_10000m_batch_100k", "set_size_m": 10000, "batch_size_k": 100, "arity": 16, "total_memory_m": 21333, "num_hashing_per_batch": 420269, "disk_bytes_per_update": 131}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 95.9s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_100k: Collecting 100 samples in estimated 95.928 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_10000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_10000m_batch_100k
+                        time:   [960.85 ms 961.74 ms 962.77 ms]
+                        thrpt:  [106.36 Kelem/s 106.47 Kelem/s 106.57 Kelem/s]
+-- arity_32_leaves_10000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_10000m_batch_100k", "set_size_m": 10000, "batch_size_k": 100, "arity": 32, "total_memory_m": 10322, "num_hashing_per_batch": 317524, "disk_bytes_per_update": 99}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 111.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_100k: Collecting 100 samples in estimated 111.26 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_10000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_10000m_batch_100k
+                        time:   [1.1182 s 1.1217 s 1.1253 s]
+                        thrpt:  [91.000 Kelem/s 91.287 Kelem/s 91.579 Kelem/s]
+-- arity_64_leaves_10000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_10000m_batch_100k", "set_size_m": 10000, "batch_size_k": 100, "arity": 64, "total_memory_m": 5079, "num_hashing_per_batch": 245436, "disk_bytes_per_update": 76}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 165.1s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_100k: Collecting 100 samples in estimated 165.06 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_10000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_10000m_batch_100k
+                        time:   [1.6514 s 1.6527 s 1.6540 s]
+                        thrpt:  [61.912 Kelem/s 61.959 Kelem/s 62.008 Kelem/s]
+-- arity_256_leaves_10000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_10000m_batch_100k", "set_size_m": 10000, "batch_size_k": 100, "arity": 256, "total_memory_m": 1254, "num_hashing_per_batch": 205429, "disk_bytes_per_update": 64}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 502.6s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_100k: Collecting 100 samples in estimated 502.65 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_10000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_10000m_batch_100k
+                        time:   [5.0220 s 5.0238 s 5.0255 s]
+                        thrpt:  [20.376 Kelem/s 20.383 Kelem/s 20.390 Kelem/s]
+-- arity_2_leaves_100000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_100000m_batch_1k", "set_size_m": 100000, "batch_size_k": 1, "arity": 2, "total_memory_m": 3200000, "num_hashing_per_batch": 28192, "disk_bytes_per_update": 881}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_1k: Collecting 100 samples in estimated 7.2842 s (300 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_100000m_batch_1k
+                        time:   [24.248 ms 24.338 ms 24.424 ms]
+                        thrpt:  [41.926 Kelem/s 42.075 Kelem/s 42.230 Kelem/s]
+-- arity_4_leaves_100000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_100000m_batch_1k", "set_size_m": 100000, "batch_size_k": 1, "arity": 4, "total_memory_m": 1066666, "num_hashing_per_batch": 13836, "disk_bytes_per_update": 432}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_1k: Collecting 100 samples in estimated 5.0519 s (300 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_100000m_batch_1k
+                        time:   [16.734 ms 16.797 ms 16.857 ms]
+                        thrpt:  [60.748 Kelem/s 60.963 Kelem/s 61.192 Kelem/s]
+-- arity_8_leaves_100000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_100000m_batch_1k", "set_size_m": 100000, "batch_size_k": 1, "arity": 8, "total_memory_m": 457142, "num_hashing_per_batch": 9088, "disk_bytes_per_update": 284}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_1k: Collecting 100 samples in estimated 5.7696 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_100000m_batch_1k
+                        time:   [14.493 ms 14.546 ms 14.597 ms]
+                        thrpt:  [70.153 Kelem/s 70.397 Kelem/s 70.654 Kelem/s]
+-- arity_16_leaves_100000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_100000m_batch_1k", "set_size_m": 100000, "batch_size_k": 1, "arity": 16, "total_memory_m": 213333, "num_hashing_per_batch": 6563, "disk_bytes_per_update": 205}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_1k: Collecting 100 samples in estimated 6.1502 s (400 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_100000m_batch_1k
+                        time:   [15.364 ms 15.422 ms 15.480 ms]
+                        thrpt:  [66.148 Kelem/s 66.398 Kelem/s 66.649 Kelem/s]
+-- arity_32_leaves_100000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_100000m_batch_1k", "set_size_m": 100000, "batch_size_k": 1, "arity": 32, "total_memory_m": 103225, "num_hashing_per_batch": 5223, "disk_bytes_per_update": 163}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_1k: Collecting 100 samples in estimated 5.5016 s (300 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_100000m_batch_1k
+                        time:   [18.382 ms 18.458 ms 18.534 ms]
+                        thrpt:  [55.251 Kelem/s 55.477 Kelem/s 55.705 Kelem/s]
+-- arity_64_leaves_100000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_100000m_batch_1k", "set_size_m": 100000, "batch_size_k": 1, "arity": 64, "total_memory_m": 50793, "num_hashing_per_batch": 4197, "disk_bytes_per_update": 131}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_1k: Warming up for 3.0000 s
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_1k: Collecting 100 samples in estimated 5.4494 s (200 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_100000m_batch_1k
+                        time:   [27.587 ms 27.688 ms 27.788 ms]
+                        thrpt:  [36.850 Kelem/s 36.984 Kelem/s 37.119 Kelem/s]
+-- arity_256_leaves_100000m_batch_1k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_100000m_batch_1k", "set_size_m": 100000, "batch_size_k": 1, "arity": 256, "total_memory_m": 12549, "num_hashing_per_batch": 3098, "disk_bytes_per_update": 96}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_1k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_1k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 7.4s, or reduce sample count to 60.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_1k: Collecting 100 samples in estimated 7.3758 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_1k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_100000m_batch_1k
+                        time:   [73.685 ms 73.962 ms 74.234 ms]
+                        thrpt:  [13.794 Kelem/s 13.845 Kelem/s 13.897 Kelem/s]
+-- arity_2_leaves_100000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_100000m_batch_10k", "set_size_m": 100000, "batch_size_k": 10, "arity": 2, "total_memory_m": 3200000, "num_hashing_per_batch": 248026, "disk_bytes_per_update": 775}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 21.0s, or reduce sample count to 20.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_10k: Collecting 100 samples in estimated 20.991 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_100000m_batch_10k
+                        time:   [211.79 ms 212.41 ms 213.02 ms]
+                        thrpt:  [48.072 Kelem/s 48.209 Kelem/s 48.350 Kelem/s]
+-- arity_4_leaves_100000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_100000m_batch_10k", "set_size_m": 100000, "batch_size_k": 10, "arity": 4, "total_memory_m": 1066666, "num_hashing_per_batch": 120977, "disk_bytes_per_update": 378}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 14.5s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_10k: Collecting 100 samples in estimated 14.457 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_100000m_batch_10k
+                        time:   [143.99 ms 144.46 ms 144.93 ms]
+                        thrpt:  [70.656 Kelem/s 70.887 Kelem/s 71.115 Kelem/s]
+-- arity_8_leaves_100000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_100000m_batch_10k", "set_size_m": 100000, "batch_size_k": 10, "arity": 8, "total_memory_m": 457142, "num_hashing_per_batch": 78826, "disk_bytes_per_update": 246}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 12.3s, or reduce sample count to 40.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_10k: Collecting 100 samples in estimated 12.340 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_100000m_batch_10k
+                        time:   [123.53 ms 123.91 ms 124.29 ms]
+                        thrpt:  [82.385 Kelem/s 82.644 Kelem/s 82.897 Kelem/s]
+-- arity_16_leaves_100000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_100000m_batch_10k", "set_size_m": 100000, "batch_size_k": 10, "arity": 16, "total_memory_m": 213333, "num_hashing_per_batch": 57869, "disk_bytes_per_update": 180}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 13.4s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_10k: Collecting 100 samples in estimated 13.409 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_100000m_batch_10k
+                        time:   [134.31 ms 134.73 ms 135.16 ms]
+                        thrpt:  [75.764 Kelem/s 76.005 Kelem/s 76.241 Kelem/s]
+-- arity_32_leaves_100000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_100000m_batch_10k", "set_size_m": 100000, "batch_size_k": 10, "arity": 32, "total_memory_m": 103225, "num_hashing_per_batch": 44188, "disk_bytes_per_update": 138}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 15.5s, or reduce sample count to 30.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_10k: Collecting 100 samples in estimated 15.495 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_100000m_batch_10k
+                        time:   [154.13 ms 154.59 ms 155.07 ms]
+                        thrpt:  [66.034 Kelem/s 66.238 Kelem/s 66.437 Kelem/s]
+-- arity_64_leaves_100000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_100000m_batch_10k", "set_size_m": 100000, "batch_size_k": 10, "arity": 64, "total_memory_m": 50793, "num_hashing_per_batch": 37071, "disk_bytes_per_update": 115}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 23.9s, or reduce sample count to 20.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_10k: Collecting 100 samples in estimated 23.901 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_100000m_batch_10k
+                        time:   [241.02 ms 241.73 ms 242.46 ms]
+                        thrpt:  [42.234 Kelem/s 42.361 Kelem/s 42.486 Kelem/s]
+-- arity_256_leaves_100000m_batch_10k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_100000m_batch_10k", "set_size_m": 100000, "batch_size_k": 10, "arity": 256, "total_memory_m": 12549, "num_hashing_per_batch": 26756, "disk_bytes_per_update": 83}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_10k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_10k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 62.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_10k: Collecting 100 samples in estimated 62.260 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_10k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_100000m_batch_10k
+                        time:   [638.46 ms 639.85 ms 641.22 ms]
+                        thrpt:  [15.970 Kelem/s 16.004 Kelem/s 16.039 Kelem/s]
+-- arity_2_leaves_100000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_2_leaves_100000m_batch_100k", "set_size_m": 100000, "batch_size_k": 100, "arity": 2, "total_memory_m": 3200000, "num_hashing_per_batch": 2145606, "disk_bytes_per_update": 670}
+
+
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 182.5s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_100k: Collecting 100 samples in estimated 182.52 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_2_leaves_100000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_2_leaves_100000m_batch_100k
+                        time:   [1.8596 s 1.8618 s 1.8638 s]
+                        thrpt:  [54.942 Kelem/s 55.002 Kelem/s 55.064 Kelem/s]
+-- arity_4_leaves_100000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_4_leaves_100000m_batch_100k", "set_size_m": 100000, "batch_size_k": 100, "arity": 4, "total_memory_m": 1066666, "num_hashing_per_batch": 1054937, "disk_bytes_per_update": 329}
+
+
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 128.0s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_100k: Collecting 100 samples in estimated 127.98 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_4_leaves_100000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_4_leaves_100000m_batch_100k
+                        time:   [1.2812 s 1.2824 s 1.2835 s]
+                        thrpt:  [79.782 Kelem/s 79.852 Kelem/s 79.924 Kelem/s]
+-- arity_8_leaves_100000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_8_leaves_100000m_batch_100k", "set_size_m": 100000, "batch_size_k": 100, "arity": 8, "total_memory_m": 457142, "num_hashing_per_batch": 671546, "disk_bytes_per_update": 209}
+
+
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 106.4s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_100k: Collecting 100 samples in estimated 106.36 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_8_leaves_100000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_8_leaves_100000m_batch_100k
+                        time:   [1.0768 s 1.0779 s 1.0790 s]
+                        thrpt:  [94.898 Kelem/s 94.995 Kelem/s 95.095 Kelem/s]
+-- arity_16_leaves_100000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_16_leaves_100000m_batch_100k", "set_size_m": 100000, "batch_size_k": 100, "arity": 16, "total_memory_m": 213333, "num_hashing_per_batch": 516269, "disk_bytes_per_update": 161}
+
+
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 123.3s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_100k: Collecting 100 samples in estimated 123.35 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_16_leaves_100000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_16_leaves_100000m_batch_100k
+                        time:   [1.2323 s 1.2336 s 1.2348 s]
+                        thrpt:  [82.926 Kelem/s 83.008 Kelem/s 83.095 Kelem/s]
+-- arity_32_leaves_100000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_32_leaves_100000m_batch_100k", "set_size_m": 100000, "batch_size_k": 100, "arity": 32, "total_memory_m": 103225, "num_hashing_per_batch": 410428, "disk_bytes_per_update": 128}
+
+
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 147.4s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_100k: Collecting 100 samples in estimated 147.37 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_32_leaves_100000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_32_leaves_100000m_batch_100k
+                        time:   [1.4694 s 1.4707 s 1.4719 s]
+                        thrpt:  [69.569 Kelem/s 69.627 Kelem/s 69.688 Kelem/s]
+-- arity_64_leaves_100000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_64_leaves_100000m_batch_100k", "set_size_m": 100000, "batch_size_k": 100, "arity": 64, "total_memory_m": 50793, "num_hashing_per_batch": 313551, "disk_bytes_per_update": 97}
+
+
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 210.4s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_100k: Collecting 100 samples in estimated 210.35 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_64_leaves_100000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_64_leaves_100000m_batch_100k
+                        time:   [2.1013 s 2.1033 s 2.1052 s]
+                        thrpt:  [48.643 Kelem/s 48.686 Kelem/s 48.732 Kelem/s]
+-- arity_256_leaves_100000m_batch_100k: calculating parameters
+(not counting leaves):
+{"name": "arity_256_leaves_100000m_batch_100k", "set_size_m": 100000, "batch_size_k": 100, "arity": 256, "total_memory_m": 12549, "num_hashing_per_batch": 211076, "disk_bytes_per_update": 65}
+
+
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_100k
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_100k: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 516.6s, or reduce sample count to 10.
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_100k: Collecting 100 samples in estimated 516.58 s (100 iterations)
+Benchmarking complete_merkle_tree_sims/arity_256_leaves_100000m_batch_100k: Analyzing
+complete_merkle_tree_sims/arity_256_leaves_100000m_batch_100k
+                        time:   [5.1438 s 5.1459 s 5.1479 s]
+                        thrpt:  [19.892 Kelem/s 19.900 Kelem/s 19.907 Kelem/s]
+
